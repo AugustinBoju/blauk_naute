@@ -17,10 +17,10 @@ const MarkDownInput = ({ triggerSetNote, note }) => {
       <NavList triggerShowStorage={(input) => setInput(input)} />
         <form onSubmit={handleSubmit}>
             <label>Title :</label>
-            <input type="text" name="title" onChange={handleChange} className="form-control" value={note.title}/>
+            <input type="text" name="title" onChange={handleChange} value={note.title}/>
 
             <label>Note :</label>
-            <textarea name="note" onChange={handleChange} className="form-control" value={note.note} style={{ minHeight: "30vh" }}/>
+            <textarea name="note" onChange={handleChange} value={note.note}/>
           <input type="submit" value="Save"/>
         </form>
       </>
