@@ -20,7 +20,6 @@ const NavList = ({ triggerShowStorage }) => {
       <a href="#" onClick={() => getStorageItem(n)}>
       Notes {id} -
          {n} - {JSON.parse(localStorage.getItem(n)).slice(0, 15)}
-      }
       </a>
     </li>
   ));
