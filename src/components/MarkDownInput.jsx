@@ -24,7 +24,7 @@ const MarkDownInput = ({ triggerSetNote, note }) => {
             <label>Note :</label>
             <textarea name="note" onChange={handleChange} className="form-control" value={note.note} style={{ minHeight: "30vh" }}/>
           </div>
-          <input type="submit" value="Sauvegarder" className="btn-lg btn-danger"/>
+          <input type="submit" value="Save" className="btn-lg btn-danger"/>
         </form>
       </>
   );
