@@ -16,7 +16,7 @@ const NavList = ({ triggerShowStorage }) => {
   };
 
   const navListRes = notes.map((n, id) => (
-    <li key={id} className="list-group-item">
+    <li key={id}>
       <a href="#" onClick={() => getStorageItem(n)}>
       Notes {id} -
          {n} - {JSON.parse(localStorage.getItem(n)).slice(0, 15)}

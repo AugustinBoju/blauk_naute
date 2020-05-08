@@ -7,10 +7,10 @@ const NoteDisplay = ({ note, title }) => {
     return { __html: converter.makeHtml(note) };
   }
   return (
-    <div className="row">
-        <h2>{title}</h2>
-        <div dangerouslySetInnerHTML={createMarkup(note)}/>
-    </div>
+    <>
+      <h2>{title}</h2>
+      <div dangerouslySetInnerHTML={createMarkup(note)}/>
+</>
   );
 };
 export default NoteDisplay;
